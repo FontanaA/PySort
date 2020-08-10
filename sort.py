@@ -46,9 +46,19 @@ def stalin(x):
                 #this is fine.....!
                 pass
 
+def bogosort(x):
+    repeat = True
+    while repeat:
+        random.shuffle(x)
+        print(x)
+        if is_sorted(x):
+            repeat = False
+    return(x)
+
+
 def is_sorted(x):
     yay = 0
-    for i in range(len(x)-1):
+    for i in range(len(x)):
         if x[i] == x[-1]:
             return(True)
         if x[i] >= x[i+1]:
@@ -57,9 +67,10 @@ def is_sorted(x):
             return(False) #:(
     return(True)
 if __name__ == "__main__":
-    bubble(rand_list(0, 100, 100))
-    b = input()
-    stalin(rand_list(0, 100, 100))
-    b = input
-    selection(rand_list(0, 100, 100))
-                
+    bubble(rand_list(0, 100, 10))
+    b = input(">")
+    selection(rand_list(0, 100, 10))
+    b = input(">")
+    stalin(rand_list(0, 100, 10))
+    b = input(">")
+    bogosort(rand_list(0, 100, 8))
