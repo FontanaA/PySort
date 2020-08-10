@@ -56,5 +56,10 @@ def is_sorted(x):
         else:
             return(False) #:(
     return(True)
-bubble(rand_list(0, 100, 100))
+if __name__ == "__main__":
+    bubble(rand_list(0, 100, 100))
+    b = input()
+    stalin(rand_list(0, 100, 100))
+    b = input
+    selection(rand_list(0, 100, 100))
                 
