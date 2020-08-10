@@ -5,7 +5,6 @@ def rand_list(srart, stop, total):
     print(f"{rand_list} \nis the unsorted list")
     return(rand_list)
 
-def bubble(x, gen):
-    if gen == True:
-        pass
+def bubble(x):
+    print(x)
 
