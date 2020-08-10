@@ -2,7 +2,7 @@
  sorting algorithms in a nice python script / module thing
  
  # Coming soon:
- bogosort, better error hadeling( specifically in the rand_list function), optional error checking / list acuracy checking in all sorting functions(except stalin sort), ther ability to revieve a least to greatest version, a new function that reverses the order of an input list, and a C version of the script.
+better error hadeling( specifically in the rand_list function), optional error checking / list acuracy checking in all sorting functions(except stalin sort), ther ability to revieve a least to greatest version, a new function that reverses the order of an input list, and a C version of the script.
  
  # Documentation
  
@@ -24,7 +24,12 @@
 	selection(x)
 	x is a list of numbers (non negative)
 4. stalin function
-	Ued to selection sort a list of numbers from greatest to least using the leading sorting algorith, which also compresses the list quite 	drastically.
-	ex. aort.stalin([1, 7  99, 38, 1451, 254, 23452435, 4]) || stalin(rand_list(0, 100, 100))
+	Ued to selection sort a list of numbers from greatest to least using the leading sorting algorith, which also compresses the list quite drastically.
+	ex. sort.stalin([1, 7  99, 38, 1451, 254, 23452435, 4]) || stalin(rand_list(0, 100, 100))
 	stalin(x)
+	x is a list of numbers (non negative)
+5. bogosort function
+	used to sort a list of numbers by randomising the list until it is in the right order. (This is reaaaaalllly slow for any list and really only works in time for lists less than 6)
+	ex. sort.bogosort([1, 7  99, 38, 1451, 254, 23452435, 4]) || bogosort(rand_list(0, 100, 5))
+	bogosort(x)
 	x is a list of numbers (non negative)
