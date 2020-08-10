@@ -14,9 +14,16 @@ def bubble(x):
                 x[i], x[i+1] = x[i+1], x[i]
                 print(x)
                 repeat = True
+    return(x)
+
 def selection(x):
     for i in range(len(x)):
         low_val = i
         for j in range(i+1, len(x)):
             low_val = j
             x[i], x[low_val] = x[low_val], x[i]
+    return(x)
+
+#the best:
+def stalin(x):
+    
