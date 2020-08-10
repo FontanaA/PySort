@@ -6,4 +6,17 @@ def rand_list(srart, stop, total):
     return(rand_list)
 
 def bubble(x):
-    print(x)
+    repeat = True
+    while repeat:
+        repeat = False
+        for i in range (len(x)-1):
+            if [i] < x[i+1]:
+                x[i], x[i+1] = x[i+1], x[i]
+                print(x)
+                repeat = True
+def selection(x):
+    for i in range(len(x)):
+        low_val = i
+        for j in range(i+1, len(x)):
+            low_val = j
+            x[i], x[low_val] = x[low_val], x[i]
