@@ -7,4 +7,3 @@ def rand_list(srart, stop, total):
 
 def bubble(x):
     print(x)
-
