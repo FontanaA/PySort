@@ -54,7 +54,7 @@ def bogosort(x):
         if is_sorted(x):
             repeat = False
     return(x)
-            
+
 
 def is_sorted(x):
     yay = 0
@@ -73,4 +73,4 @@ if __name__ == "__main__":
     b = input(">")
     stalin(rand_list(0, 100, 10))
     b = input(">")
-    bogosort(rand_list(0, 100, 10))
+    bogosort(rand_list(0, 100, 8))
