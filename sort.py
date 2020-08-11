@@ -49,22 +49,23 @@ def stalin(x):
 def bogosort(x):
     repeat = True
     while repeat:
-        random.shuffle(x)
-        print(x)
         if is_sorted(x):
             repeat = False
+        random.shuffle(x)
+        print(x)
     return(x)
 
 
 def is_sorted(x):
     yay = 0
-    for i in range(len(x)):
-        if x[i] == x[-1]:
-            return(True)
+    for i in range(len(x)-1):
+        print(i, x[i])
         if x[i] >= x[i+1]:
             yay += 1
         else:
             return(False) #:(
+        if x[i] == x[-1] and i+1 == len(x):
+            return(True)
     return(True)
 if __name__ == "__main__":
     bubble(rand_list(0, 100, 10))
