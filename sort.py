@@ -24,7 +24,6 @@ def selection(x):
         low_val = i
         for j in range(i+1, len(x)):
             if x[j] < x[low_val]:
-                
                 low_val = j
                 x[i], x[low_val] = x[low_val], x[i]
                 print(x)
@@ -54,7 +53,6 @@ def bogosort(x):
         random.shuffle(x)
         print(x)
     return(x)
-
 
 def is_sorted(x):
     yay = 0
